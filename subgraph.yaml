@@ -1,24 +1,25 @@
-specVersion: 0.0.2
-description: Indexing all Ethereum Block data
-repository: https://github.com/blocklytics/ethereum-blocks
+specVersion: 0.0.4
+description: Indexing all BSC Testnet Block data
+repository: https://github.com/Iguana-DEX/bsc-testnet-blocks
 schema:
   file: ./schema.graphql
 dataSources:
   - kind: ethereum/contract
-    name: ConverterRegistryContract
-    network: rinkeby
+    name: BUSDImplementation
+    network: bsc-bruno
     source:
-      address: "0x0ddff327ddf7fe838e3e63d02001ef23ad1ede8e"
-      abi: ConverterRegistryContract
+      address: "0xeD24FC36d5Ee211Ea25A80239Fb8C4Cfd80f12Ee"
+      abi: BUSDImplementation
+      startBlock: 25380853
     mapping:
       kind: ethereum/events
-      apiVersion: 0.0.3
+      apiVersion: 0.0.6
       language: wasm/assemblyscript
       entities:
-        - ConverterAddition
+        - Transfer
       abis:
-        - name: ConverterRegistryContract
-          file: ./abis/ConverterRegistryContract.json
+        - name: BUSDImplementation
+          file: ./abis/BUSDImplementation.json
       blockHandlers:
         - handler: handleBlock
       file: ./src/mappings/blocks.ts
