@@ -7,7 +7,7 @@ Every block is handled by one mapping handleBlock
 ### Note
 The contract BUSDImplementation found in the ABIs folder and subgraph.yaml file is just a dummy contract used to pass formatting checks. Each block is handled automatically regardless of the logic in this contract.
 
-Subgraph endpoint: https://thegraph.com/explorer/subgraph/styliann-eth/bsc-testnet-blocks.
+Subgraph endpoint: [https://thegraph.com/explorer/subgraph/styliann-eth/bsc-testnet-blocks](https://thegraph.com/explorer/subgraph/styliann-eth/bsc-testnet-blocks).
 
 
 
@@ -39,4 +39,17 @@ npm run deployed
 [ Only tested with Node version 16.x (Gallium LTS). ]
 
 
-Navigate to the 'sample-queries' folder and run the 'node index' command.
+Navigate to the 'sample-queries' folder:
+```bash
+cd sample-queries
+```
+
+Generate the node_modules folder containing all the necessary npm dependencies:
+```bash
+npm install
+```
+
+Run the Javascript code in the index.js file:
+```bash
+node index
+```
