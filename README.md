@@ -21,7 +21,7 @@ You'll be prompted for a Deploy key. You should enter the 'ACCESS TOKEN' display
 Once all necessary adjustments to the various files have been made, run the 3 commands:
 
 ```bash
-npm install
+npm run codegen
 npm run build
 npm run deployed
 ```
