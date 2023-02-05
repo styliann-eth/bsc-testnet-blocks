@@ -6,14 +6,14 @@ schema:
 dataSources:
   - kind: ethereum/contract
     name: BUSDImplementation
-    network: bsc-bruno
+    network: chapel
     source:
       address: "0xeD24FC36d5Ee211Ea25A80239Fb8C4Cfd80f12Ee"
       abi: BUSDImplementation
       startBlock: 25380853
     mapping:
       kind: ethereum/events
-      apiVersion: 0.0.6
+      apiVersion: 0.0.4
       language: wasm/assemblyscript
       entities:
         - Transfer

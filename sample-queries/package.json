@@ -7,18 +7,18 @@
   "scripts": {
     "codegen": "graph codegen",
     "build": "graph build",
-    "deploy": "graph deploy --node https://api.thegraph.com/deploy/ --ipfs https://api.thegraph.com/ipfs/ iguanadex/bsc-testnet-blocks",
-    "create-local": "graph create --node http://localhost:8020/ iguanadex/bsc-testnet-blocks",
-    "remove-local": "graph remove --node http://localhost:8020/ iguanadex/bsc-testnet-blocks",
-    "deploy-local": "graph deploy --node http://localhost:8020/ --ipfs http://localhost:5001 iguanadex/bsc-testnet-blocks",
+    "deploy": "graph deploy --product hosted-service --node https://api.thegraph.com/deploy/ --ipfs https://api.thegraph.com/ipfs/ styliann-eth/bsc-testnet-blocks",
+    "create-local": "graph create --node http://localhost:8020/ styliann-eth/bsc-testnet-blocks",
+    "remove-local": "graph remove --node http://localhost:8020/ styliann-eth/bsc-testnet-blocks",
+    "deploy-local": "graph deploy --node http://localhost:8020/ --ipfs http://localhost:5001 styliann-eth/bsc-testnet-blocks",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@graphprotocol/graph-cli": "^0.25.0",
-    "@graphprotocol/graph-ts": "^0.25.0",
+    "@graphprotocol/graph-cli": "^0.17.1",
+    "@graphprotocol/graph-ts": "^0.17.0",
     "graphql": "^16.6.0",
     "graphql-request": "^5.1.0"
   }
