@@ -1,5 +1,13 @@
 # bsc-testnet-blocks
-Subgraph indexing BSC Testnet block data
+
+This subgraph indexes all block data on the Arbitrum One mainnet beta network.
+
+Every block is handled by one mapping handleBlock
+
+### Note
+The contract BUSDImplementation found in the ABIs folder and subgraph.yaml file is just a dummy contract used to pass formatting checks. Each block is handled automatically regardless of the logic in this contract.
+
+Subgraph endpoint: https://thegraph.com/explorer/subgraph/styliann-eth/bsc-testnet-blocks.
 
 
 
@@ -26,7 +34,7 @@ npm run build
 npm run deployed
 ```
 
-## Sample queries in Javascript
+## Sample queries on this Subgraph in Javascript
 
 [ Only tested with Node version 16.x (Gallium LTS). ]
 
