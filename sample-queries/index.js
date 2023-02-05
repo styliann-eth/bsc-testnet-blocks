@@ -29,4 +29,4 @@ const query = gql`
   }
 `
 
-request('https://api.thegraph.com/subgraphs/name/matthewlilley/bsc-blocks', query).then((data) => console.log(data))
+request('https://api.thegraph.com/subgraphs/name/styliann-eth/bsc-testnet-blocks', query).then((data) => console.log(data))

@@ -5,7 +5,7 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "codegen": "graph codegen",
+    "codegen": "graph codegen --output-dir src/types/",
     "build": "graph build",
     "deploy": "graph deploy --product hosted-service --node https://api.thegraph.com/deploy/ --ipfs https://api.thegraph.com/ipfs/ styliann-eth/bsc-testnet-blocks",
     "create-local": "graph create --node http://localhost:8020/ styliann-eth/bsc-testnet-blocks",
@@ -17,8 +17,8 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@graphprotocol/graph-cli": "^0.17.1",
-    "@graphprotocol/graph-ts": "^0.17.0",
+    "@graphprotocol/graph-cli": "^0.38.0",
+    "@graphprotocol/graph-ts": "^0.29.3",
     "graphql": "^16.6.0",
     "graphql-request": "^5.1.0"
   }
